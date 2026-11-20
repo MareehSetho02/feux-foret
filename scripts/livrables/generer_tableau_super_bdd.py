@@ -1,4 +1,4 @@
-"""Génère le tableau de visualisation de la super BDD à partir de « Indicateurs x donnees SDIS33.md »."""
+"""Génère le tableau de visualisation de la super BDD à partir de « docs/sources/indicateurs-x-donnees.md »."""
 import re
 import sys
 
@@ -130,7 +130,7 @@ ws.column_dimensions["B"].width = 110
 lines = [
     ("Super BDD feux de forêt – SDIS 33", None, TITLE),
     ("Problématique", "Quel seuil d'un indice de risque, calculé par zone à partir de facteurs naturels et humains, permettrait au SDIS 33 de déclencher son dispositif renforcé à l'été 2027 de façon efficiente, tout en limitant les fausses alertes ?", None),
-    ("Source du classeur", "Généré à partir de « Indicateurs x donnees SDIS33.md » (révision du 20/11/2026, après vérifications). En cas d'écart, le document Markdown fait foi.", None),
+    ("Source du classeur", "Généré à partir de « docs/sources/indicateurs-x-donnees.md » (révision du 20/11/2026, après vérifications). En cas d'écart, le document Markdown fait foi.", None),
     ("Grains", "Facteurs au carreau DFCI de 2 km (dimension carreau) ; évaluation du seuil (feux, déclenchements, fausses alertes) à la commune × jour. Emprise : Gironde (33), plus Landes (40) et Lot-et-Garonne (47) pour comparer.", None),
     ("", None, None),
     ("Onglets", None, BOLD),
@@ -139,7 +139,7 @@ lines = [
     ("Sources", "Catalogue des sources (défi et HD) avec verdict et nombre d'indicateurs alimentés (formule).", None),
     ("Liaison", "Table de liaison indicateur × source (format long), à filtrer. C'est la table de base des associations de l'UML.", None),
     ("Matrice", "Vue croisée indicateur × source, calculée à partir de l'onglet Liaison : P, C ou X si la liaison est retenue ou conditionnelle, « é » si elle est écartée.", None),
-    ("Variables BDD", "Dictionnaire des variables de la super BDD, rangées par classe de l'UML (« UML super BDD SDIS33.md »), avec indicateur, source et statut.", None),
+    ("Variables BDD", "Dictionnaire des variables de la super BDD, rangées par classe de l'UML (« docs/modelisation/uml-super-bdd.md »), avec indicateur, source et statut.", None),
     ("Demandes", "Données à demander au SDIS 33 et aux partenaires, classées « écarté » : hors modèle tant qu'elles ne sont pas fournies.", None),
     ("", None, None),
     ("Légende", None, BOLD),
@@ -322,7 +322,7 @@ VARS = [
     ("(à demander)", "Non public", "chronologie_interventions", "Alerte, départ, arrivée, feu fixé, moyens engagés", "—", "1 intervention", "P5.6", "SDIS 33", "à demander"),
 ]
 
-# Alignement sur les classes de « UML super BDD SDIS33.md »
+# Alignement sur les classes de « docs/modelisation/uml-super-bdd.md »
 CLASSE = {"feu": "Feu", "commune_jour": "CommuneJour", "carreau": "Carreau", "carreau_saison": "CarreauSaison",
           "carreau_mois": "CarreauMois", "commune": "Commune", "commune_saison": "CommuneSaison",
           "site_secours": "SiteSecours", "departement_annee": "BudgetSDIS", "ref_cout_ressource_etat": "CoutRessourceEtat",

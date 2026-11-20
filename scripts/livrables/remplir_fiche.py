@@ -1,7 +1,7 @@
-"""Remplit « Fiche d'identite des donnees.docx » pour la Météo des forêts (Météo-France).
+"""Remplit « docs/sources/fiches/meteo-forets.docx » pour la Météo des forêts (Météo-France).
 
 Édite directement le XML du docx (pas de dépendance python-docx).
-Usage : python3 scripts/remplir_fiche.py <docx_source> <docx_sortie>
+Usage : python3 scripts/livrables/remplir_fiche.py <docx_source> <docx_sortie>
 """
 from __future__ import annotations
 

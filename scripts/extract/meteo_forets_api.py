@@ -5,8 +5,8 @@ Auth : clé d'API (header `apikey`) créée sur le portail, lue dans la variable
 d'environnement MF_API_KEY ou dans le fichier .env à la racine du projet.
 
 Usage :
-    python3 scripts/meteo_forets_api.py            # tous les endpoints, sortie dans data/raw/
-    python3 scripts/meteo_forets_api.py --dep 69   # focus département
+    python3 scripts/extract/meteo_forets_api.py            # tous les endpoints, sortie dans data/raw/
+    python3 scripts/extract/meteo_forets_api.py --dep 69   # focus département
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ import pathlib
 import requests
 
 BASE = "https://public-api.meteofrance.fr/public/DPMeteoForets/v1"
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "raw"
 
 
