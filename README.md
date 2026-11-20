@@ -32,9 +32,11 @@ scripts/
 .github/              Modèle de pull request
 ```
 
+Ce schéma décrit l'organisation cible. Les livrables sont ajoutés par leurs propres branches. En attendant, `Analyse de la commande.md` et `Fiche d'identite des donnees.md` restent à la racine. Leurs branches les déplaceront dans `docs/cadrage/` et `docs/sources/fiches/`.
+
 ## Ordre de lecture
 
-1. [`docs/cadrage/analyse-commande.md`](docs/cadrage/analyse-commande.md) : les questions du SDIS.
+1. [`Analyse de la commande.md`](Analyse%20de%20la%20commande.md) : les questions du SDIS.
 2. [`docs/cadrage/questions-x-donnees.md`](docs/cadrage/questions-x-donnees.md) : chaque question reliée aux champs des jeux de données.
 3. [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md) : le catalogue des sources et la correspondance entre indicateurs et données publiques.
 4. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.

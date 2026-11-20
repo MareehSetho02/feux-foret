@@ -1,6 +1,6 @@
 # Tableau questions × données précises
 
-Ce document relie chaque question de [`analyse-commande.md`](analyse-commande.md) (partie 1) aux **champs précis** des jeux décrits dans [`fiche-identite-sources.md`](../sources/fiches/fiche-identite-sources.md), aux **croisements ou corrélations** à faire, puis aux jeux du [défi data.gouv « Prévenir et détecter les feux de forêt »](https://defis.data.gouv.fr/defis/prevenir-et-detecter-les-feux-de-foret) qui seraient plus pertinents.
+Ce document relie chaque question de [`Analyse de la commande.md`](../../Analyse%20de%20la%20commande.md) (partie 1) aux **champs précis** des jeux décrits dans [`Fiche d'identite des donnees.md`](../../Fiche%20d'identite%20des%20donnees.md), aux **croisements ou corrélations** à faire, puis aux jeux du [défi data.gouv « Prévenir et détecter les feux de forêt »](https://defis.data.gouv.fr/defis/prevenir-et-detecter-les-feux-de-foret) qui seraient plus pertinents.
 
 Il prépare la future base agrégée (« super BDD ») : clés de jointure, grains et sources à ajouter.
 
