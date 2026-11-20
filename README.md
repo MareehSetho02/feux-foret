@@ -20,6 +20,7 @@ Projet du bloc « Qualité et modélisation des données » (HETIC, M2). L'objec
 README.md
 livrables/            Rendus (ajoutés par leurs branches docs/…)
   modelisation-pipeline-donnee/   Analyse de la commande, fiche d'identité des données, modèle de données
+  datavisualisation-decisionnel/  Cadrage : sources prévisionnelles, stack technique, dépôt
 docs/
   sources/            Indicateurs × données (catalogue des sources au § 1), revue critique
   modelisation/       UML de la super BDD, règles d'alignement
@@ -41,6 +42,7 @@ Ce schéma décrit l'organisation cible. Les livrables sont ajoutés par leurs p
 3. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.
 4. [`fiche-identite-donnees.md`](livrables/modelisation-pipeline-donnee/fiche-identite-donnees.md) : la fiche d'identité des principales sources.
 5. [`2026-11-20_modele-donnees.md`](livrables/modelisation-pipeline-donnee/2026-11-20_modele-donnees.md) : le modèle de données (UML, transformations, alignement).
+6. [`2026-11-20_cadrage.md`](livrables/datavisualisation-decisionnel/2026-11-20_cadrage.md) : le cadrage (sources prévisionnelles, stack technique, dépôt GitHub).
 
 ## Installation
 
