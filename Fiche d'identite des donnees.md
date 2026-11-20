@@ -2,7 +2,7 @@
 
 **Périmètre** : SDIS 33 (Gironde), avec les Landes (40) et le Lot-et-Garonne (47) en comparaison. **Mise à jour** : 20/11/2026.
 
-Les sources sont classées par priorité, de la plus utile à la moins utile pour le modèle de données (voir [`livrables/2026-11-20_modele-donnees.md`](livrables/2026-11-20_modele-donnees.md)). Les codes P1.1, P3.1… renvoient aux indicateurs de [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md), qui contient aussi le catalogue complet des sources. La mention « à vérifier » signale une information qui n'a pas encore été confirmée sur la page du producteur.
+Les sources sont classées par priorité, de la plus utile à la moins utile pour le modèle de données (voir [`livrables/modelisation-pipeline-donnee/2026-11-20_modele-donnees.md`](livrables/modelisation-pipeline-donnee/2026-11-20_modele-donnees.md)). Les codes P1.1, P3.1… renvoient aux indicateurs de [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md), qui contient aussi le catalogue complet des sources. La mention « à vérifier » signale une information qui n'a pas encore été confirmée sur la page du producteur.
 
 | Jeu de données | Fraîcheur |  |  | Qualité |  |
 | :---- | :---- | :---- | :---- | :---- | :---- |

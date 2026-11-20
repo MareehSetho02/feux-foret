@@ -1,6 +1,6 @@
 # Modèle de données : entrepôt feux de forêt SDIS 33
 
-**Livrable du 20/11/2026** · Bloc « Qualité et modélisation des données » (HETIC, M2) · Équipe : voir le [README](../README.md#équipe)
+**Livrable du 20/11/2026** · Bloc « Qualité et modélisation des données » (HETIC, M2) · Équipe : voir le [README](../../README.md#équipe)
 
 **Problématique** : quel seuil d'un indice de risque, calculé par zone à partir de facteurs naturels et humains, permettrait au SDIS 33 de déclencher son dispositif renforcé à l'été 2027 de façon efficiente, tout en limitant les fausses alertes ?
 
@@ -20,11 +20,11 @@ Le modèle suit l'architecture **Médaillon** :
 
 | Couche | Contenu |
 | ------ | ------- |
-| **Bronze** | Fichiers bruts téléchargés, sans modification (`data/raw/`, non versionné ; provenance dans [`data/README.md`](../data/README.md)). |
+| **Bronze** | Fichiers bruts téléchargés, sans modification (`data/raw/`, non versionné ; provenance dans [`data/README.md`](../../data/README.md)). |
 | **Silver** | Une table propre par source : types fixés, clés harmonisées (code INSEE ramené au COG, `num_dep` sur 2 caractères, dates en heure de Paris, géométries en Lambert 93). |
 | **Gold** | Tables dérivées pour l'analyse : agrégats par commune × jour, par carreau × saison, temps d'accès des secours. |
 
-Le diagramme ci-dessous montre les classes, leurs **clés** et leurs relations. Les attributs complets de chaque classe figurent dans [`docs/modelisation/uml-super-bdd.md`](../docs/modelisation/uml-super-bdd.md).
+Le diagramme ci-dessous montre les classes, leurs **clés** et leurs relations. Les attributs complets de chaque classe figurent dans [`docs/modelisation/uml-super-bdd.md`](../../docs/modelisation/uml-super-bdd.md).
 
 ```mermaid
 classDiagram
@@ -201,11 +201,11 @@ classDiagram
     Departement "1" --> "*" PrixCarburant
 ```
 
-**Choix de modélisation principaux** (détail dans [`uml-super-bdd.md` § 1](../docs/modelisation/uml-super-bdd.md#1-choix-de-modélisation)) :
+**Choix de modélisation principaux** (détail dans [`uml-super-bdd.md` § 1](../../docs/modelisation/uml-super-bdd.md#1-choix-de-modélisation)) :
 - La **météo reste à sa maille d'origine** (`MeteoMailleJour` pour SIM2, `EwdsCelluleJour` pour EWDS) et le carreau pointe vers sa maille : environ 170 mailles SIM2 couvrent la Gironde, contre environ 2 700 carreaux, ce qui évite de dupliquer les valeurs.
 - `CarreauCommune` porte la **surface boisée de l'intersection** carreau × commune. C'est le poids qui sert à passer d'un grain à l'autre.
 - `PassageCommune` ramène les **codes INSEE historiques** de la BDIFF (2006 à 2025) à un seul millésime du COG.
-- Les données non publiques (interventions géolocalisées du SDIS, impacts de foudre…) sont **hors modèle** tant qu'elles ne sont pas fournies ([liste](../docs/sources/indicateurs-x-donnees.md#6-données-à-demander-au-sdis-33-et-aux-partenaires)).
+- Les données non publiques (interventions géolocalisées du SDIS, impacts de foudre…) sont **hors modèle** tant qu'elles ne sont pas fournies ([liste](../../docs/sources/indicateurs-x-donnees.md#6-données-à-demander-au-sdis-33-et-aux-partenaires)).
 
 ---
 
@@ -267,7 +267,7 @@ Source : `QUOT_SIM2_<année>.csv.gz` (séparateur `;`, un fichier par an, 8 981 
 | `Commune` | ADMIN Express (contours, code INSEE, nom officiel), BD Forêt | Millésime unique du COG pour toute la base. `surface_foret_ha` = intersection commune × BD Forêt (surfaces en ha). |
 | `PassageCommune` | COG INSEE, table de passage annuelle (géographies 2003 à 2026) | Une ligne par code historique et par millésime, vers le code du millésime de référence. |
 | `Departement` | ADMIN Express | `num_dep` sur 2 caractères. |
-| `Carreau` | Carroyage DFCI 2 km (Lambert 93) + agrégations | Identifiant à 6 caractères (ex. `KD42F7`). `num_dep`, `id_maille_sim2`, `id_cellule_ewds` : couche qui contient le **centroïde** du carreau. Les facteurs statiques sont agrégés par carreau à partir de BD Forêt, BD TOPO, OSM, BD ALTI, FILO, TOUR, RP, TMJA et OLD ; les surfaces boisées sont masquées par les surfaces brûlées EFFIS. Règles détaillées dans [`uml-super-bdd.md` § 3](../docs/modelisation/uml-super-bdd.md#3-référentiels-et-observations-couche-silver). |
+| `Carreau` | Carroyage DFCI 2 km (Lambert 93) + agrégations | Identifiant à 6 caractères (ex. `KD42F7`). `num_dep`, `id_maille_sim2`, `id_cellule_ewds` : couche qui contient le **centroïde** du carreau. Les facteurs statiques sont agrégés par carreau à partir de BD Forêt, BD TOPO, OSM, BD ALTI, FILO, TOUR, RP, TMJA et OLD ; les surfaces boisées sont masquées par les surfaces brûlées EFFIS. Règles détaillées dans [`uml-super-bdd.md` § 3](../../docs/modelisation/uml-super-bdd.md#3-référentiels-et-observations-couche-silver). |
 | `CarreauCommune` | DFCI × ADMIN Express × BD Forêt | Intersection carreau × commune ; `poids_foret` = part de la forêt de la commune située dans le carreau. |
 
 ### 2.5. Autres observations
@@ -339,7 +339,7 @@ Toutes les dates du modèle sont des dates calendaires locales, reliées à la d
 
 ## Annexe : sources utilisées
 
-Sources qui alimentent le modèle ci-dessus. Le catalogue complet (formats, grains, périodes, sources écartées et justification) est tenu à jour dans [`docs/sources/indicateurs-x-donnees.md` § 1](../docs/sources/indicateurs-x-donnees.md#1-catalogue-des-sources).
+Sources qui alimentent le modèle ci-dessus. Le catalogue complet (formats, grains, périodes, sources écartées et justification) est tenu à jour dans [`docs/sources/indicateurs-x-donnees.md` § 1](../../docs/sources/indicateurs-x-donnees.md#1-catalogue-des-sources).
 
 | Code | Jeu de données | Producteur | Tables alimentées | État | Lien |
 | ---- | -------------- | ---------- | ----------------- | ---- | ---- |
