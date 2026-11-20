@@ -18,10 +18,11 @@ Projet du bloc « Qualité et modélisation des données » (HETIC, M2). L'objec
 
 ```
 README.md
-livrables/            Rendus datés (ajoutés par leurs branches docs/…)
+livrables/            Rendus (ajoutés par leurs branches docs/…)
+  modelisation-pipeline-donnee/   Analyse de la commande, fiche d'identité des données, modèle de données
+  datavisualisation-decisionnel/  Cadrage : sources prévisionnelles, stack technique, dépôt
 docs/
-  cadrage/            Analyse de la commande, questions × données
-  sources/            Indicateurs × données (catalogue des sources au § 1), revue critique, fiches d'identité
+  sources/            Indicateurs × données (catalogue des sources au § 1), revue critique
   modelisation/       UML de la super BDD, règles d'alignement
 cours/                Supports et notes de cours (noms d'origine conservés)
 data/                 Provenance des données (README) ; raw/ non versionné
@@ -32,14 +33,16 @@ scripts/
 .github/              Modèle de pull request
 ```
 
-Ce schéma décrit l'organisation cible. Les livrables sont ajoutés par leurs propres branches. En attendant, `Analyse de la commande.md` et `Fiche d'identite des donnees.md` restent à la racine. Leurs branches les déplaceront dans `docs/cadrage/` et `docs/sources/fiches/`.
+Ce schéma décrit l'organisation cible. Les livrables sont ajoutés par leurs propres branches.
 
 ## Ordre de lecture
 
-1. [`Analyse de la commande.md`](Analyse%20de%20la%20commande.md) : les questions du SDIS.
-2. [`docs/cadrage/questions-x-donnees.md`](docs/cadrage/questions-x-donnees.md) : chaque question reliée aux champs des jeux de données.
-3. [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md) : le catalogue des sources et la correspondance entre indicateurs et données publiques.
-4. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.
+1. [`analyse-de-la-commande.md`](livrables/modelisation-pipeline-donnee/analyse-de-la-commande.md) : les questions du SDIS.
+2. [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md) : le catalogue des sources et la correspondance entre indicateurs et données publiques.
+3. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.
+4. [`fiche-identite-donnees.md`](livrables/modelisation-pipeline-donnee/fiche-identite-donnees.md) : la fiche d'identité des principales sources.
+5. [`2026-11-20_modele-donnees.md`](livrables/modelisation-pipeline-donnee/2026-11-20_modele-donnees.md) : le modèle de données (UML, transformations, alignement).
+6. [`2026-11-20_cadrage.md`](livrables/datavisualisation-decisionnel/2026-11-20_cadrage.md) : le cadrage (sources prévisionnelles, stack technique, dépôt GitHub).
 
 ## Installation
 
