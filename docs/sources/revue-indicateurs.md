@@ -1,4 +1,4 @@
-# Revue critique : « Indicateurs x donnees SDIS33.md »
+# Revue critique : « indicateurs-x-donnees.md »
 
 Revue du 20/11/2026, selon trois axes : **faisabilité** (téléchargement, volume, effort, passage au grain carreau DFCI × jour), **fiabilité** (qualité, millésime, licence, noms de champs) et **pertinence** (utilité pour le seuil de déclenchement 2027 et la limitation des fausses alertes).
 
@@ -200,7 +200,7 @@ Colonnes : F = faisabilité, R = fiabilité, P = pertinence (de ++ à −).
 
 ---
 
-## 5. Corrections à reporter dans « Indicateurs x donnees SDIS33.md »
+## 5. Corrections à reporter dans « indicateurs-x-donnees.md »
 
 | § | Correction |
 | - | ---------- |

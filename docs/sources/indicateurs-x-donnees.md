@@ -1,6 +1,6 @@
 # Indicateurs SDIS 33 × données publiques
 
-Ce document associe chaque **donnée idéale** de `data/Donnees_ideales_SDIS33.pdf` aux **données publiques précises** qui permettent de la calculer, en indiquant la **base d'origine**. Il prépare le tableau de visualisation de la future base agrégée (« super BDD »), puis son UML.
+Ce document associe chaque **donnée idéale** de [`donnees-ideales-sdis33.pdf`](donnees-ideales-sdis33.pdf) aux **données publiques précises** qui permettent de la calculer, en indiquant la **base d'origine**. Il prépare le tableau de visualisation de la future base agrégée (« super BDD »), puis son UML.
 
 **Problématique** : quel seuil d'un indice de risque, calculé par zone à partir de facteurs naturels et humains, permettrait au SDIS 33 de déclencher son dispositif renforcé à l'été 2027 de façon efficiente, tout en limitant les fausses alertes ?
 
@@ -20,7 +20,7 @@ Ce document associe chaque **donnée idéale** de `data/Donnees_ideales_SDIS33.p
 
 Les mentions « à vérifier » signalent un champ ou une source dont l'existence ou l'intitulé exact n'a pas encore été confirmé au téléchargement.
 
-**Révision du 20/11/2026** : les corrections de la revue critique (`Revue Indicateurs x donnees SDIS33.md`) sont reportées ici. Elles portent principalement sur :
+**Révision du 20/11/2026** : les corrections de la revue critique ([`revue-indicateurs.md`](revue-indicateurs.md)) sont reportées ici. Elles portent principalement sur :
 - CLIM, requalifié en réanalyse SIM2 et devenu source principale ;
 - les seuils MDF testés (2 et 3), le niveau 4 n'ayant jamais été atteint dans les trois départements ;
 - le double grain : facteurs au carreau, évaluation du seuil à la commune × jour ;
