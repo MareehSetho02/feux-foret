@@ -1,6 +1,18 @@
 # Feux de forêt : entrepôt de données pour le SDIS 33
 
-Projet du bloc « Qualité et modélisation des données » (HETIC, M2). L'objectif est de construire un entrepôt de données sur les feux de forêt pour le SDIS de la Gironde (33), organisé en couches Bronze, Silver et Gold. Il doit aider à fixer le seuil de déclenchement du dispositif renforcé pour l'été 2027. Les Landes (40) et le Lot-et-Garonne (47) servent de points de comparaison au sein du massif landais.
+- **Projet** : `feux-foret`, entrepôt de données sur les feux de forêt pour le SDIS 33
+- **Région** : Nouvelle-Aquitaine, département de la Gironde (33). Les Landes (40) et le Lot-et-Garonne (47) servent de points de comparaison au sein du massif landais.
+
+Projet du bloc « Qualité et modélisation des données » (HETIC, M2). L'objectif est de construire un entrepôt de données sur les feux de forêt pour le SDIS de la Gironde, organisé en couches Bronze, Silver et Gold. Il doit aider à fixer le seuil de déclenchement du dispositif renforcé pour l'été 2027.
+
+## Équipe
+
+| Rôle | Membre |
+| --- | --- |
+| Chef·fe de projet | Mariam SETHO |
+| Responsable sources | Dris MOUSSAOUI |
+| Responsable qualité et conformité | Esli KADJO |
+| Responsable pipeline et modèle | Théo SAMINADIN |
 
 ## Structure du dépôt
 
