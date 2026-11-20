@@ -20,7 +20,7 @@ Projet du bloc « Qualité et modélisation des données » (HETIC, M2). L'objec
 README.md
 livrables/            Rendus datés (ajoutés par leurs branches docs/…)
 docs/
-  cadrage/            Analyse de la commande, questions × données
+  cadrage/            Analyse de la commande
   sources/            Indicateurs × données (catalogue des sources au § 1), revue critique, fiches d'identité
   modelisation/       UML de la super BDD, règles d'alignement
 cours/                Supports et notes de cours (noms d'origine conservés)
@@ -37,9 +37,8 @@ Ce schéma décrit l'organisation cible. Les livrables sont ajoutés par leurs p
 ## Ordre de lecture
 
 1. [`Analyse de la commande.md`](Analyse%20de%20la%20commande.md) : les questions du SDIS.
-2. [`docs/cadrage/questions-x-donnees.md`](docs/cadrage/questions-x-donnees.md) : chaque question reliée aux champs des jeux de données.
-3. [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md) : le catalogue des sources et la correspondance entre indicateurs et données publiques.
-4. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.
+2. [`docs/sources/indicateurs-x-donnees.md`](docs/sources/indicateurs-x-donnees.md) : le catalogue des sources et la correspondance entre indicateurs et données publiques.
+3. [`docs/sources/revue-indicateurs.md`](docs/sources/revue-indicateurs.md) : la revue critique du document précédent.
 
 ## Installation
 
